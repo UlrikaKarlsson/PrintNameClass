@@ -13,7 +13,7 @@ namespace PrintNameClass
             public string firstName, lastName, homePhone, workPhone;
             public void Print()
             {
-                Console.WriteLine("{0} {1} {2} {3}",
+                Console.WriteLine("{0} {1}   {2}   {3}",
                     firstName, lastName, homePhone, workPhone);
             }
         }
