@@ -16,17 +16,18 @@ namespace PrintNameClass
                 Console.WriteLine("{0} {1}   {2}   {3}",
                     firstName, lastName, homePhone, workPhone);
             }
+            public Person(string F, string L, string HP, string WP)
+            {
+                firstName = F;
+                lastName = L;
+                homePhone = HP;
+                workPhone = WP;
+            }
         }
         
         static void Main(string[] args)
         {
-            Person Arne = new Person()
-            {
-                firstName = "Arne",
-                lastName = "Saknusem",
-                homePhone = "013-13 13 13",
-                workPhone = "073 - 747 57 67"
-            };
+            Person Arne = new Person("Arne", "Saknusem", "013-13 13 13", "073 - 747 57 67");
             Arne.Print();
         }                
     }
